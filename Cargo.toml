@@ -1,0 +1,8 @@
+[package]
+name = "counter"
+version = "0.1.0"
+authors = ["Davide Masserut <d.masserut@gmail.com>"]
+
+[dependencies]
+ncurses = "5.94.0"
+indexmap = "1.0.2"
