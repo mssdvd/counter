@@ -2,6 +2,7 @@
 name = "counter"
 version = "0.1.0"
 authors = ["Davide Masserut <d.masserut@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 ncurses = "5.97.0"
