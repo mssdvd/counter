@@ -10,7 +10,11 @@ fn main() {
 
     loop {
         for (char, times) in &pressed_chars {
-            ncurses::printw(&format!("Char: `{}` pressed {} times\n", char, times));
+            ncurses::printw(&format!(
+                "Char: `{}` pressed {} times\n",
+                char.escape_default(),
+                times
+            ));
         }
 
         let ch = ncurses::getch();
