@@ -1,16 +1,14 @@
-use std::char;
-
 fn main() {
     let mut pressed_chars: indexmap::IndexMap<char, u32> = indexmap::IndexMap::new();
 
     ncurses::initscr();
     ncurses::noecho();
 
-    ncurses::printw("Counter by mssdvd\n");
+    ncurses::addstr("Counter by mssdvd\n");
 
     loop {
         for (char, times) in &pressed_chars {
-            ncurses::printw(&format!(
+            ncurses::addstr(&format!(
                 "Char: `{}` pressed {} times\n",
                 char.escape_default(),
                 times
